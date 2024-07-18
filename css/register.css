@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+body {
+  background-color: #e0e3ff;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register {
+  max-width: 400px;
+  border-radius: 10px;
+  background: #FFF;
+  padding: 36px 24px 26px;
+  margin: 10vh auto 0;
+  width: 95%;
+}
+.register h1 {
+  color: #252EFF;
+  font-family: "Inter", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-block-end: 69px;
+}
+.register form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.register form .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+}
+.register form .form-row:has(input:not(:-moz-placeholder-shown)) label {
+  top: -5px;
+  font-size: 10px;
+  background-color: #FFF;
+  padding-inline: 3px;
+  cursor: default;
+}
+.register form .form-row:has(input:focus) label, .register form .form-row:has(input:not(:placeholder-shown)) label {
+  top: -5px;
+  font-size: 10px;
+  background-color: #FFF;
+  padding-inline: 3px;
+  cursor: default;
+}
+.register form .form-row label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #76769e;
+  transition: 0.2s;
+  cursor: text;
+}
+.register form .form-row input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #6066FF;
+}
+.register form .form-row .error {
+  display: none;
+  color: #f73131;
+  margin-inline-start: 10px;
+  font-size: 10px;
+}
+.register form .form-row.error .error, .register form .form-row:has(input:invalid) .error {
+  display: block;
+}
+.register form .form-row.error input, .register form .form-row:has(input:invalid) input {
+  border-color: #f73131;
+}
+.register form button {
+  margin-block-start: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #8B54FF;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.register form .server-error-message {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  color: #f73131;
+  font-size: 12px;
+  margin-block-start: 12px;
+}
+.register__back-button {
+  border-radius: 100vmax;
+  border: 1px solid #555;
+  position: absolute;
+  width: 30px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register__back-button img {
+  width: 20px;
+  margin-inline-end: 3px;
+}

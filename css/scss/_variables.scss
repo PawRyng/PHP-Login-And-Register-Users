@@ -1,0 +1,47 @@
+//  default styles
+body {
+    background-color: #e0e3ff;
+    position        : relative
+}
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box
+}
+
+//  import fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@mixin button-element($backgroundColor, $textColor) {
+    padding         : 10px 30px;
+    border-radius   : 20px;
+    background-color: $backgroundColor;
+    border          : none;
+    color           : $textColor;
+    cursor          : pointer;
+    text-decoration : none;
+}
+
+@mixin back-button() {
+    border-radius  : 100vmax;
+    border         : 1px solid #555;
+    position       : absolute;
+    width          : 30px;
+    aspect-ratio   : 1/1;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+
+    img {
+        width            : 20px;
+        margin-inline-end: 3px;
+    }
+}
+
+//  variables
+
+$main-font: "Inter",
+sans-serif;
+$error-color: #f73131;
+$max-width  : 400px;

@@ -1,0 +1,39 @@
+@use 'variables'as *;
+
+main {
+    max-width      : $max-width;
+    border-radius  : 10px;
+    background     : #FFF;
+    padding        : 36px 24px 26px;
+    margin         : 10vh auto 0px;
+    font-family    : $main-font;
+    display        : flex;
+    flex-wrap      : wrap;
+    gap            : 10px;
+    width          : 95%;
+    justify-content: center;
+
+    h1 {
+        width           : 100%;
+        color           : #252EFF;
+        text-align      : center;
+        margin-block-end: 30px;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    .logout {
+        margin-block-start: 40px;
+        @include button-element(#8B54FF, white);
+    }
+
+    .login-button {
+        @include button-element(#8B54FF, white);
+    }
+
+    .register-button {
+        @include button-element(#6066FF, white);
+    }
+}

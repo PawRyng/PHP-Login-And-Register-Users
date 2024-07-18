@@ -1,0 +1,106 @@
+@use 'variables'as *;
+
+.login {
+    max-width    : $max-width;
+    border-radius: 10px;
+    background   : #FFF;
+    padding      : 36px 24px 26px;
+    margin       : 10vh auto 0;
+    width        : 95%;
+
+    h1 {
+        color           : #252EFF;
+        font-family     : $main-font;
+        font-size       : 44px;
+        font-style      : normal;
+        font-weight     : 700;
+        line-height     : normal;
+        text-align      : center;
+        margin-block-end: 69px;
+    }
+
+    form {
+        display       : flex;
+        flex-direction: column;
+        gap           : 10px;
+
+        .form-row {
+            display       : flex;
+            flex-direction: column;
+            gap           : 3px;
+            font-family   : $main-font;
+            font-size     : 12px;
+            font-style    : normal;
+            font-weight   : 400;
+            line-height   : normal;
+            position      : relative;
+
+            &:has(input:focus),
+            &:has(input:not(:placeholder-shown)) {
+                label {
+                    top             : -5px;
+                    font-size       : 10px;
+                    background-color: #FFF;
+                    padding-inline  : 3px;
+                    cursor          : default;
+                }
+            }
+
+            label {
+                position  : absolute;
+                top       : 12px;
+                left      : 10px;
+                color     : #76769e;
+                transition: .2s;
+                cursor    : text;
+            }
+
+            input {
+                width        : 100%;
+                padding      : 10px;
+                border-radius: 10px;
+                border       : 2px solid #6066FF;
+            }
+
+            .error {
+                display            : none;
+                color              : $error-color;
+                margin-inline-start: 10px;
+                font-size          : 10px;
+            }
+
+            &.error,
+            &:has(input:invalid) {
+                .error {
+                    display: block;
+                }
+
+                input {
+                    border-color: $error-color;
+                }
+            }
+        }
+
+        button {
+            margin-block-start: 40px;
+            padding           : 10px;
+            border-radius     : 20px;
+            background-color  : #8B54FF;
+            border            : none;
+            color             : white;
+            cursor            : pointer;
+        }
+
+        .server-error-message {
+            font-family       : $main-font;
+            text-align        : center;
+            color             : $error-color;
+            font-size         : 12px;
+            margin-block-start: 12px;
+        }
+    }
+
+    &__back-button {
+        @include back-button();
+    }
+}

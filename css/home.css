@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+body {
+  background-color: #e0e3ff;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 400px;
+  border-radius: 10px;
+  background: #FFF;
+  padding: 36px 24px 26px;
+  margin: 10vh auto 0px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 95%;
+  justify-content: center;
+}
+main h1 {
+  width: 100%;
+  color: #252EFF;
+  text-align: center;
+  margin-block-end: 30px;
+}
+main p {
+  width: 100%;
+}
+main .logout {
+  margin-block-start: 40px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #8B54FF;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+main .login-button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #8B54FF;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+main .register-button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #6066FF;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
