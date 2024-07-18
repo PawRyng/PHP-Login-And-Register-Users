@@ -20,7 +20,7 @@ To aplikacja webowa, która pozwala na rejestrację i logowanie użytkowników. 
 1.  **Sklonuj repozytorium**
     
    ```bash
-git clone https://github.com/twoja-nazwa-repozytorium.git cd twoja-nazwa-repozytorium
+git clone https://github.com/PawRyng/PHP-Login-And-Register-Users.git cd PHP-Login-And-Register-Users
 ```
 2. Skonfiguruj plik `.env`
 Skopiuj przykładowy plik konfiguracyjny `.env-example` do `.env` i dostosuj ustawienia zgodnie z potrzebami:
