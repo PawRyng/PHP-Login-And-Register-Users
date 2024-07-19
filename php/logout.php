@@ -5,6 +5,6 @@ session_unset();
 
 session_destroy();
 
-header('Location: /');
+http_response_code(200);
 
 exit;
