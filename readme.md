@@ -5,15 +5,15 @@
 To aplikacja webowa, która pozwala na rejestrację i logowanie użytkowników. Użytkownicy są przechowywani w bazie danych MySQL, a ich hasła są hashowane z użyciem soli. Po zalogowaniu, użytkownicy mają dostęp do panelu, a zarejestrowani użytkownicy nie mogą ponownie wejść do panelu logowania ani rejestracji.
 
 ## Technologie
--	**Frontend**: SCSS, jQuery
+-  **Frontend**: SCSS, jQuery
 -  **Backend**: PHP
 -  **Baza danych**: MySQL
 -  **Konteneryzacja**: Docker, Docker Compose
   
 ## Wymagania
 
--   Docker
--   Docker Compose
+-   [Docker](https://www.docker.com/)
+-   [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## Instalacja
 
@@ -43,6 +43,8 @@ docker-compose up --build
 ```
 Kontenery zostaną uruchomione, a aplikacja będzie dostępna pod adresem `http://localhost:<WEB_PORT>`.
 
+
+Używając Docker Compose, tabela w bazie danych zostanie automatycznie utworzona podczas tworzenia kontenera.
 
 ## Struktura katalogów
 ```bash
