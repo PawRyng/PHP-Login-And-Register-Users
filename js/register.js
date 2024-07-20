@@ -10,7 +10,7 @@ function registerValidation($this){
     }
     else{
         email.parent().addClass('error');
-        password.siblings('.error').text('Email musi być w formacie email')
+        email.siblings('.error').text('Email musi być w formacie email')
     }
     
     if(password.val().length >= 8){
